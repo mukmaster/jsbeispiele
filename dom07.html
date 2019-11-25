@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Beispiel DOM07: Neues Fenster mit neuem Inhalt öffnen</h2>
+
+    <p>Drück den Knopf, um ein neues Fenster zu öffnen und mit etwas Inhalt zu füllen.</p>
+
+    <button onclick="meineFunktion()">Drück mich!</button>
+
+    <script>
+        function meineFunktion() {
+            var w = window.open();
+            w.document.open();
+            w.document.write("<h2>Hallo, Welt!</h2>");
+            w.document.write("<p>Hier steht neuer Inhalt!</p>");
+            w.document.close();
+        }
+    </script>
+
+</body>
+
+</html>

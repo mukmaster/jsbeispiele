@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Beispielseite DOM06</title>
+</head>
+
+<body>
+
+    <h2>Beispiel DOM06: Eigenschaften des document-Objekts auslesen</h2>
+
+    <h3>Einige Eigenschaften des HTML-Dokuments</h3>
+    <p>Die vollständige URL dieser Seite: <span id="url"></span>.</p>
+    <p>Der Titel der Seite ist <span id="titel"></span>.</p>
+    <p>Seite zuletzt geändert am <span id="datum"></span>.</p>
+    <p>Diese Seite wurde aufgerufen von <span id="referrer"></span> (Referrer).</p>
+
+
+    <script>
+        document.getElementById("url").innerHTML = document.URL;
+        document.getElementById("titel").innerHTML = document.title;
+        document.getElementById("datum").innerHTML = document.lastModified;
+        document.getElementById("referrer").innerHTML = document.referrer;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function absaetzeZaehlen() {
+            var x = document.getElementsByTagName("li");
+            document.getElementById("zaehler").innerHTML = x.length;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Beispiel DOM08: HTML-Elemente zählen</h2>
+
+    <p>Drück auf den Knopf, dann erfährst du, wieviele Listeneinträge diese Seite enthält.</p>
+
+<ul>
+    <li>Punkt 1</li>
+    <li>Punkt 2</li>
+    <li>Punkt 3</li>
+    <li>Punkt 4</li>
+</ul>
+    
+    <button onclick="absaetzeZaehlen()">Drück mich!</button>
+
+    <p>Die Seite enthält <span id="zaehler"></span> Listeninträge</p>
+
+
+</body>
+
+</html>

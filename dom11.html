@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Beispiel DOM11: document.links auslesen</h2>
+
+    <a href="csstutorial.html">CSS Tutorial</a><br>
+    <a href="xmltutorial.html">XML Tutorial</a><br>
+    <a href="jstutorial.html">JavaScript Tutorial</a><br>
+    <a href="htmltutorial.html">HTML Tutorial</a><br>
+
+    <p id="linktext"></p>
+
+    <script>
+        document.getElementById("linktext").innerHTML =
+            "Das Ziel des ersten Links ist " + document.links[0].href;       
+    </script>
+
+</body>
+
+</html>

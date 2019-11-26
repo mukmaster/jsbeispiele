@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Beispiel DOM10: document.links</h2>
+
+    <a href="csstutorial.html">CSS Tutorial</a><br>
+    <a href="xmltutorial.html">XML Tutorial</a><br>
+    <a href="jstutorial.html">JavaScript Tutorial</a><br>
+    <a href="htmltutorial.html">HTML Tutorial</a><br>
+
+    <p id="anzahllinks"></p>
+
+<script>
+        document.getElementById("anzahllinks").innerHTML =
+            "Soviele Links gibt es im Dokument: " + document.links.length;       
+    </script>
+
+</body>
+
+</html>

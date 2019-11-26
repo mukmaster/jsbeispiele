@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Beispiel DOM09: document.anchors</h2>
+
+    <a name="html">HTML Tutorial</a><br>
+    <a name="css">CSS Tutorial</a><br>
+    <a name="xml">XML Tutorial</a><br>
+    <a name="js">JavaScript Tutorial</a><br>
+
+    <p id="ankerzahl"></p>
+
+    <script>
+        document.getElementById("ankerzahl").innerHTML =
+            "Soviele Anker gibt es im Dokument: " + document.anchors.length;
+    </script>
+
+</body>
+
+</html>

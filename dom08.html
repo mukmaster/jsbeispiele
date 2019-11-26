@@ -3,9 +3,9 @@
 
 <head>
     <script>
-        function absaetzeZaehlen() {
-            var x = document.getElementsByTagName("li");
-            document.getElementById("zaehler").innerHTML = x.length;
+        function elementeZaehlen() {
+            var alleListItems = document.getElementsByTagName("li");
+            document.getElementById("zaehler").innerHTML = alleListItems.length;
         }
     </script>
 </head>
@@ -14,20 +14,18 @@
 
     <h2>Beispiel DOM08: HTML-Elemente zählen</h2>
 
-    <p>Drück auf den Knopf, dann erfährst du, wieviele Listeneinträge diese Seite enthält.</p>
+    <p>Drück auf den Knopf, dann erfährst du, wieviele Listeneinträge <code>&lt;li&gt;...&lt;/li&gt;</code> diese Seite enthält.</p>
 
-<ul>
-    <li>Punkt 1</li>
-    <li>Punkt 2</li>
-    <li>Punkt 3</li>
-    <li>Punkt 4</li>
-</ul>
-    
-    <button onclick="absaetzeZaehlen()">Drück mich!</button>
+    <ul>
+        <li>Punkt 1</li>
+        <li>Punkt 2</li>
+        <li>Punkt 3</li>
+        <li>Punkt 4</li>
+    </ul>
+
+    <button onclick="elementeZaehlen()">Drück mich!</button>
 
     <p>Die Seite enthält <span id="zaehler"></span> Listeninträge</p>
-
-
 </body>
 
 </html>

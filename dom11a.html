@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Beispiel DOM11a: document.links auslesen</h2>
+
+    <a href="csstutorial.html">CSS Tutorial</a><br>
+    <a href="xmltutorial.html">XML Tutorial</a><br>
+    <a href="jstutorial.html">JavaScript Tutorial</a><br>
+    <a href="htmltutorial.html">HTML Tutorial</a><br>
+
+    <h3>Liste aller Linkziele des Dokuments</h3>
+    <p id="liste"></p>
+
+    <script>
+        var linkliste = document.links;
+        var linkziele = "";
+
+        for (i = 0; i < linkliste.length; i++) {
+            linkziele = linkziele + linkliste[i].href + "<br>" ;
+        }
+
+        document.getElementById("liste").innerHTML = linkziele;       
+    </script>
+
+</body>
+
+</html>

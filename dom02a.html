@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var on = false;
+    </script>
+</head>
+
+<body>
+
+    <h2>Beispiel DOM02: HTML-Attribute ändern</h2>
+
+    <p>Mit JavaScript kann man die Werte von HTML-Attributen ändern.</p>
+
+    <p>In diesem Beispiel ändern wir das src-Attribut eines Bilds.</p>
+
+    <img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+
+    <button onclick="umschalt()">Drück mich</button>
+
+    <script>
+        var pic_on = 'img/pic_bulbon.gif';
+        var pic_off = 'img/pic_bulboff.gif';
+
+        function umschalt() {
+            var img = document.getElementById('myImage');
+            if (on) {
+                img.src = pic_off;
+                on = false;
+            } else {
+                img.src = pic_on;
+                on = true;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
